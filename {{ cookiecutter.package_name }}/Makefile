@@ -17,8 +17,8 @@ shell: install
 
 .PHONY: demo
 demo: install
-	poetry run nbstripout notebooks/*.ipynb
-	poetry run jupyter notebook --notebook-dir=notebooks --browser=firefox
+	poetry run nbstripout notebooks/*.ipynb  2>/dev/null || true
+	poetry run jupyter notebook --notebook-dir=notebooks
 
 # SYSTEM DEPENDENCIES #########################################################
 
