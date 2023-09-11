@@ -63,7 +63,7 @@ format: install
 .PHONY: check
 check: install format  ## Run formaters, linters, and static analysis
 	poetry run mypy ${PACKAGE_DIR} tests/python
-	poetry run deptry ${PACKAGE_DIR} tests/python
+	poetry run deptry --config pyproject.toml ${PACKAGE_DIR} tests/python
 
 # TESTS #######################################################################
 
