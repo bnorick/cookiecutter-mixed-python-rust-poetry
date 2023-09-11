@@ -1,0 +1,10 @@
+{
+  "project_name": "PyMixedRs",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '').replace('-', '') }}",
+  "project_short_description": "Blazingly fast TODO with Rust",
+  "full_name": "First Last",
+  "email": "you@example.com",
+  "version": "0.1.0",
+  "command_line_interface": ["Click", "None"],
+  "open_source_license": ["MIT", "BSD-3-Clause", "ISC", "Apache-2.0", "GPL-3.0-only", "None"]
+}
