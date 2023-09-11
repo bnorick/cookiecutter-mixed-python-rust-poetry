@@ -18,15 +18,15 @@ include = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
-{% if cookiecutter.command_line_interface|lower == "click" -%}
+{%- if cookiecutter.command_line_interface|lower == "click" %}
 click = "^8.1.7"
 {% endif -%}
 
-{% if cookiecutter.command_line_interface|lower == "click" -%}
+{% if cookiecutter.command_line_interface|lower == "click" %}
 [tool.poetry.scripts]
 {{ cookiecutter.package_name }} = "{{ cookiecutter.package_name }}.cli:main"
+{%- endif %}
 
-{% endif -%}
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.2"
 pytest-random = "^0.2"
